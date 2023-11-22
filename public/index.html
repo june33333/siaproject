@@ -10,6 +10,21 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta
+      name="viewport"
+      content="width=device-width,intial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,11 +39,270 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <title>React App</title>
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider();
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="container">
+      <ul>
+        <li>
+          <div class="slider">
+            <a href="#"
+              ><img
+                src="img/slider01.jpg"
+                width="100%"
+                height="auto"
+                alt="영화 포스터1"
+            /></a>
+            <a href="#"
+              ><img
+                src="img/slider02.jpg"
+                width="100%"
+                height="auto"
+                alt="영화 포스터2"
+            /></a>
+            <a href="#" style="height: 300px; margin-top: -188px"
+              ><img src="img/slider03.webp" width="100%" alt="영화 포스터2"
+            /></a>
+          </div>
+        </li>
+        <li>
+          <div class="slider">
+            <a href="#" class="ms_main"
+              ><img src="img/m_slider01.jpg" alt="모바일 영화 포스터1"
+            /></a>
+            <a href="#" class="ms_main"
+              ><img src="img/m_slider02.png" alt="모바일 영화 포스터2"
+            /></a>
+            <a href="#" class="ms_main"
+              ><img src="img/m_slider03.jpg" alt="모바일 영화 포스터3"
+            /></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="intro_text">
+      인기 있는 영상을 지금 확인 해보세요
+  </div>
+  <div class="slider">
+      <div class="pop_videos">
+          <div class="popflex01" style="display: flex; justify-content:space-between;">
+              <div class="pop_1">
+                  <a href="#"><img src="img/pop_m01.webp" alt="인기무비1" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">범죄도시3</a></h3>
+                      <p>범죄</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">3</div></a>
+                  </div>
+              </div>
+              <div class="pop_2">
+                  <a href="#"><img src="img/pop_m02.webp" alt="인기무비2" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">신병 시즌 2</a></h3>
+                      <p>OTT 드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">19</div></a>
+                  </div>
+              </div>
+              <div class="pop_3">
+                  <a href="#"><img src="img/pop_m03.jpg" alt="인기무비3" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">국민사형투표</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">67</div></a>
+                  </div>
+              </div>
+              <div class="pop_4">
+                  <a href="#"><img src="img/pop_m04.webp" alt="인기무비4" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">탑 건</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">5</div></a>
+                  </div>
+              </div>
+              <div class="pop_5">
+                  <a href="#"><img src="img/pop_m05.webp" alt="인기무비5" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">경관의피</a></h3>
+                      <p>범죄</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">13</div></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="pop_videos">
+          <div class="popflex01" style="display: flex; justify-content:space-between;">
+              <div class="pop_1">
+                  <a href="#"><img src="img/pop_m06.webp" alt="인기무비6" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">베테랑</a></h3>
+                      <p>액션</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">1</div></a>
+                  </div>
+              </div>
+              <div class="pop_2">
+                  <a href="#"><img src="img/pop_m07.webp" alt="인기무비7" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">어메이징 스파이더맨 2</a></h3>
+                      <p>판타지</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">2</div></a>
+                  </div>
+              </div>
+              <div class="pop_3">
+                  <a href="#"><img src="img/pop_m08.webp" alt="인기무비8" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">광해, 왕이 된 남자</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">3</div></a>
+                  </div>
+              </div>
+              <div class="pop_4">
+                  <a href="#"><img src="img/pop_m09.webp" alt="인기무비9" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">엑시트</a></h3>
+                      <p>코미디</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">4</div></a>
+                  </div>
+              </div>
+              <div class="pop_5">
+                  <a href="#"><img src="img/pop_m10.webp" alt="인기무비10" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">기생충</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">5</div></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="allshow01">
+      <a href="#">전체보기<span class="material-symbols-outlined">chevron_right</span></a>
+  </div>
+  <div class="intro_text">
+      놓친 드라마를 모두 감상 하세요
+  </div>
+  <div class="slider">
+      <div class="pop_videos">
+          <div class="popflex01" style="display: flex; justify-content:space-between;">
+              <div class="pop_1">
+                  <a href="#"><img src="img/pop_d01.webp" alt="인기드라마1" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">타인은 지옥이다 코멘터리 스페셜</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">30</div></a>
+                  </div>
+              </div>
+              <div class="pop_2">
+                  <a href="#"><img src="img/pop_d02.webp" alt="인기드라마2" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">경이로운 소문2 카운터펀치</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">19</div></a>
+                  </div>
+              </div>
+              <div class="pop_3">
+                  <a href="#"><img src="img/pop_d03.webp" alt="인기드라마3" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">키마이라</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">50</div></a>
+                  </div>
+              </div>
+              <div class="pop_4">
+                  <a href="#"><img src="img/pop_d04.webp" alt="인기드라마4" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">나의 아저씨</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">15</div></a>
+                  </div>
+              </div>
+              <div class="pop_5">
+                  <a href="#"><img src="img/pop_d05.webp" alt="인기드라마5" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">잔혹한 인턴</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">13</div></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="pop_videos">
+          <div class="popflex01" style="display: flex; justify-content:space-between;">
+              <div class="pop_1">
+                  <a href="#"><img src="img/pop_d06.webp" alt="인기드라마6" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">또 오해영</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">3</div></a>
+                  </div>
+              </div>
+              <div class="pop_2">
+                  <a href="#"><img src="img/pop_d07.webp" alt="인기드라마7" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">도깨비</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">33</div></a>
+                  </div>
+              </div>
+              <div class="pop_3">
+                  <a href="#"><img src="img/pop_d08.webp" alt="인기드라마8" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">이브</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">76</div></a>
+                  </div>
+              </div>
+              <div class="pop_4">
+                  <a href="#"><img src="img/pop_d09.webp" alt="인기드라마9" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">스물다섯 스물하나</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">35</div></a>
+                  </div>
+              </div>
+              <div class="pop_5">
+                  <a href="#"><img src="img/pop_d10.webp" alt="인기드라마10" width="236" height="339" ></a>
+                  <div class="group">
+                      <h3><a href="#">구미호뎐1938</a></h3>
+                      <p>드라마</p>
+                      <a href="#"><span class="material-symbols-outlined">favorite</span><div class="goodnumber">33</div></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="allshow01">
+      <a href="#">전체보기<span class="material-symbols-outlined">chevron_right</span></a>
+  </div>
+</section>
+<footer id="footer">
+  <div class="sia">
+      <div class="footer_info">
+          <a href="#">공지사항</a>
+          <a href="#">최근 시아티비 사칭 관련 안내</a>
+      </div>
+  </div>
+  <div class="tou">
+      <a href="#">사이트 소개</a><span></span>
+      <a href="#">이용약관</a><span></span>
+      <a href="#">개인정보 취급방침</a><span></span>
+      <a href="#">비상주소 확인하기</a><span></span>
+      <a href="#">자료요청</a><span></span>
+      <a href="#">모바일 버전</a>
+  </div>
+  <div class="copy">
+      <p>시아티비 서비스는 무료 OTT 서비스입니다 자료요청은 요청 페이지에서 접수 하실 수 있습니다</p>
+      <p>회사명 : 시아TV 사업장 주소 : <span>상록수역 투썸</span> 2층 연락처 : 112</p>
+      <p>광고문의 및 문의사항 메일 : police@korea.co.kr</p>
+      <p>Copyright © SiaTv All right reserved.</p>
+  </div>
+</footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

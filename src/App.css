@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+header,
+section,
+footer,
+nav,
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Pretendard-Regular";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-modal-content {
+  background-color: #0f0f0f !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-modal-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.ant-modal-footer {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-modal-close-x {
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* HTML 슬라이드 */
+
+#container > .slider {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.bx-controls-direction {
+  display: none;
+}
+.bx-wrapper {
+  border: 0px;
+  box-shadow: 0 0 0px #ccc;
+  background: #0f0f0f;
+}
+bx-pager-link active {
+  background: #fff !important;
+  display: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #eee;
+}
+
+#container > ul > li:nth-child(2) {
+  display: none;
+}
+
+/* 인트로 텍스트 */
+
+#container > .intro_text {
+  color: #fff;
+  padding-bottom: 1%;
+}
+
+/* 슬라이드 무비 5개 묶음 */
+
+.pop_videos {
+  background: #0f0f0f;
+}
+.group {
+  color: #b6b6b6;
+  padding-left: 10px;
+}
+.group > a {
+  color: #b6b6b6;
+}
+.group > h3 {
+  margin-top: 10px;
+}
+.group > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.group > h3 > a {
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+}
+.group > a > span {
+  float: left;
+}
+.goodnumber {
+  padding-top: 1%;
+}
+
+/* 슬라이드 호버 */
+
+.pop_videos > div > div:hover {
+  transform: translate(0px, -3%);
+  animation: 3;
+  transition: all 0.5s;
+}
+
+.allshow01 {
+  text-align: right;
+}
+.allshow01 > a {
+  color: #b6b6b6;
+}
+.allshow01 > a > span {
+  vertical-align: middle;
+}
+/* footer */
+
+#footer {
+  width: auto;
+  height: 278px;
+  margin-top: 82px;
+}
+#footer > .sia {
+  width: 100vw;
+  height: 55px;
+  margin-left: calc(-50vw + 50%);
+  border: 1px solid #fff;
+  background: #0a0a0a;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  line-height: 55px;
+}
+#footer > .sia > .footer_info {
+  width: 1200px;
+  margin: 0 auto;
+}
+#footer > .sia > .footer_info > a {
+  color: #b6b6b6;
+}
+#footer > .sia > .footer_info > a:hover {
+  color: #fff;
+}
+#footer > .sia > .footer_info > a:nth-child(1) {
+  margin-right: 2%;
+}
+#footer > .tou {
+  width: 700px;
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer > .tou > a {
+  color: #b6b6b6;
+}
+#footer > .tou > a:hover {
+  color: #fff;
+}
+#footer > .tou > span {
+  background: #555;
+  width: 1px;
+  height: 15px;
+  margin-top: 4%;
+}
+#footer > .copy > p {
+  color: #b6b6b6;
+  margin-bottom: 1%;
+}
+#footer > .copy > p > span {
+  text-decoration: underline;
 }
